@@ -4,7 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antonio Benedetto / Junior Developer</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Portfolio di Antonio Benedetto, Junior Developer specializzato in interfacce moderne e performanti. Scopri i miei progetti e la mia esperienza.">
+    <meta name="author" content="Antonio Benedetto">
+    <meta name="keywords" content="Junior Developer, Web Development, Portfolio, HTML, CSS, JavaScript, React, Catania">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Antonio Benedetto / Junior Developer">
+    <meta property="og:description" content="Costruisco interfacce moderne e performanti. Esplora il mio portfolio di Junior Developer.">
+    <meta property="og:image" content="images/logo.png">
+    <meta property="og:url" content="https://antoniobenedettogit.github.io/">
+
+    <!-- Icons -->
     <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="apple-touch-icon" href="images/logo.png">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,8 +33,13 @@
             <nav class="nav">
                 <div class="container">
                     <div class="logo-wrap">
-                        <img src="images/logo.png" alt="Logo" class="logo-img">
+                        <img src="images/logo.png" alt="Antonio Benedetto Logo" class="logo-img">
                     </div>
+                    <button class="hamburger" aria-label="Apri Menu di Navigazione" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <ul class="nav-links mono">
                         <li><a href="#about" class="nav-item">CHI SONO</a></li>
                         <li><a href="#projects" class="nav-item">PROGETTI</a></li>
@@ -50,11 +71,11 @@
             <div class="container">
                 <div class="about-wrap">
                     <h2 class="section-title reveal">CHI_SONO</h2>
-                    <div class="about-text reveal">
+                    <article class="about-text reveal">
                         <p>Ho trascorso anni nel customer service B2B, dove ho imparato che un servizio eccellente è fatto di attenzione ai dettagli e problem-solving. Dal 2024 applico questa mentalità allo sviluppo web.</p>
                         <p>Costruisco interfacce moderne e performanti, passando dalla fase di design all'implementazione. Mi occupo di tutto il processo: dalla creazione all'integrazione di componenti riutilizzabili.</p>
                         <p>Credo che un buon codice debba essere pulito, performante e accessibile. Per ogni progetto mi concentro sull'esperienza utente, cercando di rendere ogni interazione fluida e intuitiva.</p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -74,7 +95,7 @@
                 
                 <div class="projects-grid">
                     <!-- Project 1 -->
-                    <article class="project-card reveal" style="background-image: url('images/movie.PNG')">
+                    <article class="project-card reveal" style="background-image: url('images/movie.png')">
                         <div class="project-header">
                             <span class="project-num mono">01</span>
                             <h3 class="project-name">Movie Search</h3>
@@ -83,11 +104,11 @@
                             <p>Ricerca film e serie TV. HTML Vanilla & API integration.</p>
                             <div class="project-tags mono">#JS #VANILLA #API</div>
                         </div>
-                        <a href="https://antoniobenedettogit.github.io/movie-search-app/" target="_blank" class="project-link mono">OPEN_SITE ↗</a>
+                        <a href="https://antoniobenedettogit.github.io/movie-search-app/" target="_blank" rel="noopener noreferrer" class="project-link mono">OPEN_SITE ↗</a>
                     </article>
 
                     <!-- Project 2 -->
-                    <article class="project-card reveal" style="background-image: url('images/plastic.PNG')">
+                    <article class="project-card reveal" style="background-image: url('images/plastic.png')">
                         <div class="project-header">
                             <span class="project-num mono">02</span>
                             <h3 class="project-name">Plastic Odyssey</h3>
@@ -96,11 +117,11 @@
                             <p>Sensibilizzazione ambientale. React + Vite & TypeScript.</p>
                             <div class="project-tags mono">#REACT #TS #ECO</div>
                         </div>
-                        <a href="https://antoniobenedettogit.github.io/PlasticOdyssey/" target="_blank" class="project-link mono">OPEN_SITE ↗</a>
+                        <a href="https://antoniobenedettogit.github.io/PlasticOdyssey/" target="_blank" rel="noopener noreferrer" class="project-link mono">OPEN_SITE ↗</a>
                     </article>
 
                     <!-- Project 3 -->
-                    <article class="project-card reveal" style="background-image: url('images/gae.PNG')">
+                    <article class="project-card reveal" style="background-image: url('images/gae.png')">
                         <div class="project-header">
                             <span class="project-num mono">03</span>
                             <h3 class="project-name">Gae Jeep Shop</h3>
@@ -109,7 +130,7 @@
                             <p>E-commerce vetrina dinamico. React, Sanity CMS & Tailwind.</p>
                             <div class="project-tags mono">#CMS #SHOP #NEXT_JS</div>
                         </div>
-                        <a href="https://gaejeepshop.vercel.app" target="_blank" class="project-link mono">OPEN_SITE ↗</a>
+                        <a href="https://gaejeepshop.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link mono">OPEN_SITE ↗</a>
                     </article>
                 </div>
             </div>
@@ -120,15 +141,15 @@
                 <div class="contact-card reveal">
                     <h2 class="contact-title">READY TO WORK?</h2>
                     <div class="contact-links">
-                        <a href="mailto:benedetto.anto@virgilio.it" class="contact-item">
+                        <a href="mailto:benedetto.anto@virgilio.it" class="contact-item" aria-label="Invia Email">
                             <span class="mono">EMAIL</span>
                             <span class="link-text">benedetto.anto@virgilio.it</span>
                         </a>
-                        <a href="tel:+393471997013" class="contact-item">
+                        <a href="tel:+393471997013" class="contact-item" aria-label="Chiama al telefono">
                             <span class="mono">TELEFONO</span>
                             <span class="link-text">+39 3471997013</span>
                         </a>
-                        <a href="https://github.com/AntonioBenedettoGit" target="_blank" class="contact-item">
+                        <a href="https://github.com/AntonioBenedettoGit" target="_blank" rel="noopener noreferrer" class="contact-item" aria-label="Visita il profilo GitHub">
                             <span class="mono">GITHUB</span>
                             <span class="link-text">@AntonioBenedettoGit</span>
                         </a>
