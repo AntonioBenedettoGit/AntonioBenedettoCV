@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="noise-bg">
+    <div class="scroll-progress" aria-hidden="true"></div>
     <header class="header">
         <div class="container">
             <nav class="nav">
@@ -49,29 +50,29 @@
             </nav>
             
             <div class="hero">
-                <div class="hero-top reveal">
+                <div class="hero-top reveal" style="transition-delay:0s">
                     <span class="tag mono">JUNIOR DEVELOPER</span>
                     <span class="location mono">CATANIA, ITALY</span>
                 </div>
-                <h1 class="hero-title reveal">
-                    <span class="line-1">BUILDING</span>
-                    <span class="line-2 outline">DIGITAL</span>
-                    <span class="line-3">EXPERIENCES</span>
+                <h1 class="hero-title">
+                    <span class="line-1 reveal" style="transition-delay:0.1s">BUILDING</span>
+                    <span class="line-2 outline reveal" style="transition-delay:0.25s">DIGITAL</span>
+                    <span class="line-3 reveal" style="transition-delay:0.4s">EXPERIENCES</span>
                 </h1>
-                <div class="hero-footer reveal">
+                <div class="hero-footer reveal" style="transition-delay:0.55s">
                     <p class="hero-intro">Dal problem-solving al code-solving</p>
                 </div>
             </div>
         </div>
-        <div class="watermark reveal">CREATIVE</div>
+        <div class="watermark reveal" style="transition-delay:0.7s">CREATIVE</div>
     </header>
 
     <main>
         <section id="about" class="section-about">
             <div class="container">
                 <div class="about-wrap">
-                    <h2 class="section-title reveal">CHI_SONO</h2>
-                    <article class="about-text reveal">
+                    <h2 class="section-title reveal" data-reveal="left">CHI_SONO</h2>
+                    <article class="about-text reveal" data-reveal="right">
                         <p>Ho trascorso anni nel customer service B2B, dove ho imparato che un servizio eccellente è fatto di attenzione ai dettagli e problem-solving. Dal 2024 applico questa mentalità allo sviluppo web.</p>
                         <p>Costruisco interfacce moderne e performanti, passando dalla fase di design all'implementazione. Mi occupo di tutto il processo: dalla creazione all'integrazione di componenti riutilizzabili.</p>
                         <p>Credo che un buon codice debba essere pulito, performante e accessibile. Per ogni progetto mi concentro sull'esperienza utente, cercando di rendere ogni interazione fluida e intuitiva.</p>
@@ -91,7 +92,7 @@
 
         <section id="projects" class="section-projects">
             <div class="container">
-                <h2 class="section-title reveal">PROGETTI</h2>
+                <h2 class="section-title reveal" data-reveal="left">PROGETTI</h2>
                 
                 <div class="projects-grid">
                     <!-- Project 1 -->
@@ -108,16 +109,16 @@
                     </article>
 
                     <!-- Project 2 -->
-                    <article class="project-card reveal" style="background-image: url('images/plastic.png')">
+                    <article class="project-card reveal" style="background-image: url('images/Farm.png')">
                         <div class="project-header">
                             <span class="project-num mono">02</span>
-                            <h3 class="project-name">Plastic Odyssey</h3>
+                            <h3 class="project-name">Farm 4.0</h3>
                         </div>
                         <div class="project-body">
-                            <p>Sensibilizzazione ambientale. React + Vite & TypeScript.</p>
-                            <div class="project-tags mono">#REACT #TS #ECO</div>
+                            <p>Sito vetrina per servizi alle farmacie. HTML, CSS & JavaScript.</p>
+                            <div class="project-tags mono">#HTML #CSS #JS #BUSINESS</div>
                         </div>
-                        <a href="https://antoniobenedettogit.github.io/PlasticOdyssey/" target="_blank" rel="noopener noreferrer" class="project-link mono">OPEN_SITE ↗</a>
+                        <a href="https://farm4-0.it/" target="_blank" rel="noopener noreferrer" class="project-link mono">OPEN_SITE ↗</a>
                     </article>
 
                     <!-- Project 3 -->
@@ -165,6 +166,7 @@
         </div>
     </footer>
 
+    <button class="back-to-top" aria-label="Torna su">↑</button>
     <script src="js/main.js"></script>
 </body>
 </html>
